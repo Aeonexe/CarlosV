@@ -21,17 +21,17 @@
 
 include( 'header.php' ); ?>
 
-	<section id="home-intro-video" class="wk-section">
+	<section id="home-intro" class="wk-section">
 
 		<div class="wk-section-wrap">
 
 			<div class="ui-box-shadow ui-bg-red wk-cols">
 
-				<div id="cs-home-intro-text-container" class="ui-box wk-col-4">
+				<div id="home-intro-text-container" class="ui-box wk-col-4">
 
 					<div id="cs-home-intro-text">
 
-						<h1 class="ui-title">Lorem ipsum dolor sit amet, consectetur adispiscing elit.</h1>
+						<h1 class="ui-title cs-title"><span class="ui-text-gold">Lorem ipsum dolor sit amet,</span> consectetur adispiscing elit.</h1>
 
 						<p>Nam vei erat er torto facilisis convalis en eget nulia.</p>
 
@@ -40,7 +40,7 @@ include( 'header.php' ); ?>
 
 				</div>
 
-				<div class="ui-box wk-col-8">
+				<div id="home-intro-video-container" class="ui-box wk-col-8">
 
 					<div class="ui-box-shadow">
 
@@ -63,7 +63,7 @@ include( 'header.php' ); ?>
 
 		<div class="wk-section-wrap">
 
-			<div class="wk-cols">
+			<div id="home-steps-container" class="wk-cols">
 
 				<div id="home-step-1" class="cs-home-step wk-col-4">
 
@@ -90,21 +90,21 @@ include( 'header.php' ); ?>
 
 	</section>
 
-	<section id="home-promo-img" class="wk-section">
+	<section id="home-promo" class="wk-section wk-d">
 
 		<div class="wk-section-wrap">
 
-				<img class="wk-img-responsive" src="<?php site_url(); ?>/img/home-promo.png" alt="Premios">
+			<img id="home-promo-img" class="wk-img-responsive" src="<?php site_url(); ?>/img/home-promo.png" alt="Premios">
 
 		</div>
 
 	</section>
 
-	<section id="home-promo-img-mobil" class="wk-section wk-m">
+	<section id="home-promo-mobil" class="wk-section wk-m">
 
 		<div class="wk-section-wrap">
 
-			<p>content</p>
+			<img id="home-promo-img" class="wk-img-responsive" src="<?php site_url(); ?>/img/home-promo.png" alt="Premios">
 
 		</div>
 
@@ -114,17 +114,17 @@ include( 'header.php' ); ?>
 
 		<div class="wk-section-wrap">
 
-			<div class="ui-box ui-box-shadow wk-cols">
+			<div id="home-forms-container" class="ui-box ui-box-shadow ui-bg-red wk-cols">
 
 				<div id="home-register-form-container" class="ui-box ui-box-shadow ui-bg-red wk-col-4">
 
-					<h1 class="ui-title ui-text-gold">Registrate</h1>
+					<h1 class="ui-title cs-title ui-text-gold">Registrate</h1>
 
-					<form id="home-register-form" class="js-form js-home-form">
+					<form id="home-register-form" class="cs-form js-form js-home-form">
 
-						<a href="#" class="js-button js-button-facebook ui-box-shadow wk-button">Conectar con Facebook</a>
+						<a id="home-register-form-button-facebook" href="#" class="js-button js-button-facebook ui-box-shadow wk-button">Conectar con Facebook</a>
 
-						<a href="#" class="js-button js-button-email ui-box-shadow wk-button">Conectar con Correo electrónico</a>
+						<a id="home-register-form-button-mail" href="#" class="js-button js-button-email ui-box-shadow wk-button">Conectar con Correo electrónico</a>
 
 					</form>
 
@@ -132,26 +132,27 @@ include( 'header.php' ); ?>
 
 				<div id="home-login-form-container" class="ui-box ui-box-shadow ui-bg-red wk-col-4">
 
-					<h1 class="ui-title ui-text-gold">Inicia Sesión</h1>
+					<h1 class="ui-title cs-title ui-text-gold">Inicia Sesión</h1>
 
-					<form id="home-login-form" class="js-form js-home-form">
+					<form id="home-login-form" class="cs-form js-form js-home-form">
 
-						<label for="home-login-form-email">Correo electrónico</label>
+						<label for="home-login-form-email" class="ui-text-gold">Correo electrónico</label>
 
-						<input id="home-login-form-email" type="text" name="" value="" class="js-input js-input-email wk-button-o" placeholder="ejemplo@gmail.com">
+						<input id="home-login-form-email" type="text" name="" value="" class="js-input js-input-email" placeholder="ejemplo@gmail.com">
 
-						<label for="home-login-form-password">Correo electrónico</label>
+						<label for="home-login-form-password" class="ui-text-gold">Contraseña</label>
 
-						<input id="home-login-form-password" type="password" name="" value="" class="js-input js-input-password wk-button-o">
+						<input id="home-login-form-password" type="password" name="" value="" class="js-input js-input-password">
 
+						<a id="home-login-form-button-entrar"  class="ui-title ui-bg-green ui-box-shadow cs-button wk-button" href="#" >Entrar</a>
 
 					</form>
 
 				</div>
 
-				<div id="home-login-img" class="wk-col-4">
+				<div id="home-login-promo" class="wk-col-4">
 
-					<img src="img/chicharito-carlos-v.png" alt="">
+					<img id="home-login-promo-img" src="img/chicharito-carlos-v.png" alt="">
 
 				</div>
 

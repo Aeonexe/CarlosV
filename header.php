@@ -140,7 +140,6 @@
 					<meta name="version" content="2.0">
 		</head>
 
-
 		<body class="<?php echo $headers['body_class']; ?> wk-wrap-1300">
 
 			<header id="main-header">
@@ -151,12 +150,14 @@
 
                                     <nav id="main-nav">
 
-                                          <ul id="main-menu" class="cs-menu js-menu">
-                                                <li class="cs-menu-item js-menu-item"><a href="#">¿Cómo participar?</a></li>
-                                                <li class="cs-menu-item js-menu-item"><a href="#">Perfíl</a></li>
-                                                <li class="cs-menu-item js-menu-item"><a href="#">Premios</a></li>
-                                                <li class="cs-menu-item js-menu-item"><a href="#">Ganadores</a></li>
-                                                <li class="cs-menu-item js-menu-item"><a href="#">Ayuda</a></li>
+                                          <ul id="main-menu" class="cs-menu wk-d js-menu">
+                                                <?php include('menu.php'); ?>
+                                          </ul>
+
+                                          <span id="off-canvas" class="wk-m fa fa-bars"></span>
+
+                                          <ul id="off-canvas-menu" class="cs-menu wk-m">
+                                                <?php include('menu.php'); ?>
                                           </ul>
 
                                     </nav>

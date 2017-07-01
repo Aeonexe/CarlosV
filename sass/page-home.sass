@@ -1,18 +1,65 @@
-#cs-home-intro-text-container
-      display: flex
-      align-items: flex-end
+#home-intro
+
+      #home-intro-text-container
+            display: flex
+            align-items: flex-end
+
+            .cs-title
+                  margin:
+                        bottom: 20px
+
+      #home-intro-video-container
 
 
 #home-steps
-      .cs-home-step
-            display: flex
-            justify-content: center
+      #home-steps-container
+            .cs-home-step
+                  display: flex
+                  justify-content: center
+
+#home-promo
+      margin:
+            top: -80px
+      #home-promo-img
+
+#home-promo-mobil
+      #home-promo-mobil-img
+
 
 #home-login
-      #home-login-img
-            position: relative
 
-            img
-                  position: absolute
-                  top: 0
-                  left: 0
+      .cs-title
+            text-align: center
+            margin:
+                  bottom: 35px
+
+      #home-forms-container
+            background: $alt-gradient-alfa
+            .cs-form
+                  min-height: 230px
+                  display: flex
+                  flex-direction: column
+                  justify-content: center
+
+            #home-register-form-container
+                  #home-register-form-button-facebook
+                        background:
+                              color: dodgerblue
+                        color: #fff
+
+            #home-login-form-container
+
+                  #home-login-form-button-entrar
+                        color: #fff
+                        min-width: 180px
+                        margin:
+                              top: 30px
+                              left: auto
+                              right: auto
+
+            #home-login-promo
+                  position: relative
+                  #home-login-promo-img
+                        position: absolute
+                        bottom: calc(0px - 100px)
+                        width: 35vw

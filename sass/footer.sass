@@ -1,5 +1,5 @@
 // Footer
-footer
+#main-footer
       font-size: 10px
       background-color: $main-color
       color: #fff
@@ -7,14 +7,23 @@ footer
       position: relative
 
       #main-footer-top
+            display: flex
+            align-items: center
+            margin:
+                  top: 20px
+                  bottom: 20px
 
-            .cs-follow
-                  font-weight: 700
+            #main-footer-social
+                  display: flex
+                  align-items: center
 
-            .cs-follow-icon
-                  font-size: 32px
-                  margin-left: 30px
-                  color: $alt-color-b
+                  .cs-follow
+                        font-weight: 700
+
+                  .cs-follow-icon
+                        font-size: 32px
+                        margin-left: 30px
+                        color: $alt-color-b
 
             #main-footer-menu
                   text-align: right
@@ -28,3 +37,6 @@ footer
       #main-footer-bottom
             color: $alt-color-b
             text-align: center
+            margin:
+                  top: 20px
+                  bottom: 20px

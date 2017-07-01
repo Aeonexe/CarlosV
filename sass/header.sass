@@ -1,22 +1,24 @@
 // Header
 #main-header
-      background-color: $main-color
+      background: $main-gradient
       color: $alt-color-b
       height: 63px
       width: 100%
+      box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.38)
       *
             height: inherit
 
       #main-nav
             display: flex
             justify-content: flex-end
+            align-items: center
 
-            .cs-menu
+            #main-menu.cs-menu
 
                   .cs-menu-item
                         display: inline-block
                         font:
-                              size: 14px
+                              size: 16px
                               weight: 700
                         text-transform: uppercase
                         text-shadow: $text-shadow
@@ -26,3 +28,25 @@
                         a
                               display: flex
                               align-items: center
+
+            #off-canvas
+                  font-size: 30px
+                  height: initial
+                  cursor: pointer
+                  transition: all .25s linear
+
+            #off-canvas-menu
+                  position: fixed
+                  width: calc(100% - 65px)
+                  max-width: 300px
+                  height: 100%
+                  top: 0
+                  background-color: white
+                  z-index: 10
+                  left: -300px
+                  transition: all .25s ease-in-out
+                  &.is-active
+                        left: 0
+
+                  *
+                        height: initial

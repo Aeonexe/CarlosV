@@ -10,11 +10,11 @@
 
 						<div id="main-footer-social" class="wk-col">
 
-							<span class="cs-follow">Siguenos en:</span>
+							<span class="ui-title-x-small cs-follow">Siguenos en:</span>
 
-							<a href="#" class="cs-follow-icon fa fa-facebook"></a>
+							<a href="#" target="_blank" class="cs-follow-icon fa fa-facebook"></a>
 
-							<a href="#" class="cs-follow-icon fa fa-twitter"></a>
+							<a href="http://google.com" target="_blank" class="cs-follow-icon fa fa-twitter"></a>
 
 						</div>
 
@@ -46,7 +46,7 @@
 
 		</footer>
 
-		<script type="text/javascript" src="js/scripts.js"></script>
+		<script type="text/javascript" src="<?php site_url(); ?>/js/scripts.js"></script>
 
 	</body>
 

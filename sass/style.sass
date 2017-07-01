@@ -1,5 +1,4 @@
 @import variables
-@import ie9
 @import wpkitui-fix
 @import ui
 @import reset
@@ -7,6 +6,7 @@
 @import header
 @import footer
 @import global
+@import ie9
 @import page-home
 
 body
@@ -16,8 +16,13 @@ body
             size: 13px
       line-height: 1.25
       color: #fff
-      // background-image: url(../mockup/01.png)
-      background: $alt-gradient
+      //background: $alt-gradient
+      background:
+            color: $alt-color-a
+            image: url(../img/bg-texture.png), url(../img/bg-gradient.svg)
+            size: cover
+            repeat: no-repeat
+            position: center
 
 main
       padding-top: 60px
