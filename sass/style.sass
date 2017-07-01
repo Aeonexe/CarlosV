@@ -1,0 +1,32 @@
+@import variables
+@import wpkitui-fix
+@import ui
+@import reset
+@import mobile
+@import header
+@import footer
+@import global
+@import ie9
+@import page-home
+
+body
+      font:
+            family: 'Open sans', sans-serif
+            weight: 400
+            size: 13px
+      line-height: 1.25
+      color: #fff
+      // background-image: url(../mockup/01.png)
+      background: $alt-gradient
+
+main
+      padding-top: 60px
+      padding-bottom: 60px
+      max-width: 1200px
+      margin: auto
+      position: relative
+      > *:first-child:before
+            content: url(../img/logo.png)
+            position: absolute
+            bottom: calc(100% - 260px)
+            right: calc(100% - 300px)
